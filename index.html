@@ -1,6 +1,6 @@
 <!doctype html>
 <head>
-<title>ÀÚ¹Ù½ºÅ©¸³Æ® ±âÃÊ½Ç½À</title>
+<title>ìë°”ìŠ¤í¬ë¦½íŠ¸ ê¸°ì´ˆì‹¤ìŠµ</title>
   <style>
     input{font-size:1em;}
     button{font-size:1em;}
@@ -9,11 +9,11 @@
   </style>
 </head>
 <body> 
-  <h1 id="display"> º¯¼ö¿Í ÇÔ¼ö, Ç¥ÁØÃ¼Áß ±¸ÇÏ±â</h1>
+  <h1 id="display"> ë³€ìˆ˜ì™€ í•¨ìˆ˜, í‘œì¤€ì²´ì¤‘ êµ¬í•˜ê¸°</h1>
   
-  <input type = "text" id="weight" placeholder = " ´ç½ÅÀÇ Ã¼Áß">kg
-  <input type = "text" id="height" placeholder = " ´ç½ÅÀÇ Å°">cm
-  <br><button id="action">°è»êÇÏ±â</button>
+  <input type = "text" id="weight" placeholder = " ë‹¹ì‹ ì˜ ì²´ì¤‘">kg
+  <input type = "text" id="height" placeholder = " ë‹¹ì‹ ì˜ í‚¤">cm
+  <br><button id="action">ê³„ì‚°í•˜ê¸°</button>
   
   <script>
    
@@ -28,8 +28,8 @@
      var standardWeight = (height - 100)*0.9;
      var dietWeight = weight - standardWeight;
      var fatRate = (weight / standardWeight)*10;
-     var Text = "´ç½ÅÀÇ Ç¥ÁØÃ¼ÁßÀº " + standardWeight + "kgÀÔ´Ï´Ù. µû¶ó¼­ ´ç½ÅÀº " + dietWeight + 
-         "kg¸¦ °¨·®ÇØ¾ßÇÕ´Ï´Ù." + "ÇöÀç ºñ¸¸µµ´Â" + fatRate + "%ÀÔ´Ï´Ù."; 
+     var Text = "ë‹¹ì‹ ì˜ í‘œì¤€ì²´ì¤‘ì€ " + standardWeight + "kgì…ë‹ˆë‹¤. ë”°ë¼ì„œ ë‹¹ì‹ ì€ " + dietWeight + 
+         "kgë¥¼ ê°ëŸ‰í•´ì•¼í•©ë‹ˆë‹¤." + "í˜„ì¬ ë¹„ë§Œë„ëŠ”" + fatRate + "%ì…ë‹ˆë‹¤."; 
      display.innerHTML = Text;
    }
     
