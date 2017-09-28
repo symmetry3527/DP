@@ -1,4 +1,32 @@
 <!doctype html>
 <head>
-<title>자바스크립트 기초<title>
+<title>자바스크립트 기초실습</title>
+  <style>
+    input{font-size:1em;}
+    body{font-size:2em;}
+    button{font-size:1em;}
 </head>
+<body> 
+  <h1 id="display"> 변수와 함수, 표준체중 구하기</h1>
+  
+  <input type = "tect" id="weight-input" placeholder = " 당신의 체중">kg
+  <input type = "tect" id="height-input" placeholder = " 당신의 키">cm
+  <button id="action">계산하기</button>
+  
+  <script>
+   
+    action.cnclick = function(){
+      console.log("ok");
+      var myWeight = weight.value;
+      var myHeight = height.value;
+      standardWeight(myWeight,myHeight);
+    }
+    
+   function standardWeight(weight, height){
+     var standardWeight = (height - 100)*0.9;
+     var dietWeight = weight - standardWeight;
+     var Text = "당신의 현재 몸무게는 " + weight + "kg 이고, 표준체중은 " + standardWeight + "kg입니다. 따라서 당신은 " + dietWight + 
+         "kg를 감량해야합니다.";
+     display.innerHTML = Tect;
+   }
+</body>
