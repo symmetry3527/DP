@@ -12,7 +12,7 @@
   
   <input type = "tect" id="weight-input" placeholder = " 당신의 체중">kg
   <input type = "tect" id="height-input" placeholder = " 당신의 키">cm
-  <button id="action">계산하기</button>
+  <br><button id="action">계산하기</button>
   
   <script>
    
@@ -26,9 +26,10 @@
    function standardWeight(weight, height){
      var standardWeight = (height - 100)*0.9;
      var dietWeight = weight - standardWeight;
-     var Text = "당신의 현재 몸무게는 " + weight + "kg 이고, 표준체중은 " + standardWeight + "kg입니다. 따라서 당신은 " + dietWight + 
-         "kg를 감량해야합니다.";
-     display.innerHTML = Tect;
+     var fatRate = (weight / standardWeight)*10;
+     var Text = "당신의 표준체중은 " + standardWeight + "kg입니다. 따라서 당신은 " + dietWight + 
+         "kg를 감량해야합니다." + "현재 비만도는" + fatRate + "입니다."; 
+     display.innerHTML = Text;
    }
   </script>
 </body>
